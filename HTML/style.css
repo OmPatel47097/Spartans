@@ -2,12 +2,17 @@ body{
     background-image: url(bg.jpg);
     /*background-repeat: no-repeat;
     background-size: cover*/;
-    color: white;
+    
 }
 
 .btn_play{
     text-align: center;
     padding-top: 100px;
+}
+
+.btn{
+    background-color: yellow;
+    
 }
 
 .Sheldon{
