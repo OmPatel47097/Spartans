@@ -1,0 +1,32 @@
+body{
+    background-image: url(bg.jpg);
+    /*background-repeat: no-repeat;
+    background-size: cover*/;
+    
+}
+
+.Sheldon{
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 150px;
+    height: 0.1px;
+
+}
+
+.rules{
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 500px;
+    height: 10px;
+}
+
+
+.btn_play{
+    text-align: center;
+    padding-top: 1px;
+}
+
+.btn{
+    background-color: yellow;
+    
+}
