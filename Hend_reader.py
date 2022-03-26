@@ -6,16 +6,17 @@ import sys
 import time
 
 
-lable = sys.argv[1]
+#lable = sys.argv[1]
 sample_imj = 200
 
-IMG_s_PATH = 'S:/Compitation & Hackthons/not_Main/Spartens'
-IMG_cls_PATH = 'S:\Compitation & Hackthons\not_Main\Spartens\Rock'
+IMG_s_PATH = 'D:\ML'
+IMG_cls_PATH = 'D:\ML\TheOne'
 
 capt = cv2.VideoCapture(0)
 
-start = False
+start = True
 count = 0
+
 
 while True:
     ret, frame = capt.read()
@@ -38,7 +39,7 @@ while True:
             (5, 50), font, 0.7, (0, 255, 255), 2, cv2.LINE_AA)
     cv2.imshow("Collecting images", frame)
 
-    k = cv2.waitKey(10)
+    k = cv2.waitKey(50)
     if k == ord('a'):
         start = not start
 
