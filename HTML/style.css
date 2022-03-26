@@ -1,5 +1,7 @@
 body{
-    background-image: url(bg.jpeg);
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button{
