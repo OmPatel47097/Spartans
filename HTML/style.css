@@ -7,9 +7,13 @@ body{
 
 .btn_play{
     text-align: center;
-    padding-top: 500px;
+    padding-top: 100px;
 }
 
+.Sheldon{
+    text-align: center;
+    padding-top: 100px;
+}
 
 button{
     font-family: 'helvetica neue', helvetica, sans-serif;
