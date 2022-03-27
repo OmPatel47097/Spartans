@@ -1,6 +1,9 @@
 The Game:
+
 Sheldon Cooper’s stone, paper, scissor, lizard, spock .
+
 INSPIRATION
+
 Have you ever played stone, paper and scissor? I guess everybody has played this game at least once in life in childhood. But have you ever played with computer?
 WHAT DOES IT DO ?
 We have created a project using python that does the same, via image detection, Our game has five variables. i.e stone, paper, scissor, lizard, spock and you have to choose one of the variables and in output computer will give its own option and at last it would be decided that either you win or computer.
