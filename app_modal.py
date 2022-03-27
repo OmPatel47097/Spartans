@@ -73,7 +73,8 @@ def calcu_winner(move1, move2):
         if move2 == "Lizard":
             return "Computer"
 
-model = load_model("rock-paper-scissors-lizard-spock-FIFTY.h5")
+
+model = load_model("rock-paper-scissors-model.h5")
 
 cap = cv2.VideoCapture(0)
 
@@ -102,7 +103,7 @@ while True:
     # predict the winner (human vs computer)
     if prev_move != user_move_name:
         if user_move_name != "none":
-            computer_move_name = choice(['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'])
+            computer_move_name = choice(["Rock", "Paper", "Scissors", "Lizard", "Spock"])
             winner = calcu_winner(user_move_name, computer_move_name)
         else:
             computer_move_name = "none"
@@ -121,8 +122,8 @@ while True:
     if computer_move_name != "none":
         icon = cv2.imread(
             "Hands/{}.png".format(computer_move_name))
-        icon = cv2.resize(icon, (400,400))
-        frame[400:400, 800:800] = icon
+        icon = cv2.resize(icon, (400, 400))
+        frame[100:500, 800:1200] = icon
 
     cv2.imshow("Rock Paper Scissors", frame)
 
