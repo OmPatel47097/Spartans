@@ -40,6 +40,39 @@ with Mp_hands.Hands(model_complexity = 0,
 
         frame = cv.flip(frame, 1)
 
+        if 0 <= clock < 20:
+            success = True
+            gameText = "Ready?"
+        elif clock < 30: gameText = "3..."
+        elif clock < 40: gameText = "2..."
+        elif clock < 50: gameText = "1..."
+        elif clock < 60: gameText = "Goo!"
+        elif clock == 60:
+            hls = results.multi_hand_landmarks
+            if hls and len(hls) == 2:
+                p1_move = getHendMove(hls[0])
+                p2_move = getHendMove(hls[1])
+            else:
+                success = False
+        elif clock < 100:
+            if success:
+                gameText = f"First Player Plaied {p1_move}. Secound Player Plaied {p2_move}"
+                if p1_move == p2_move: gameText = f"{gameText} Game is tied."
+                elif p1_move == "paper" and p2_move == "rock" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move== "rock" and p2_move == "scissors" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "scissors" and p2_move == "paper" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "lizard" and p2_move == "spock" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "spock" and p2_move == "rock" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "spock" and p2_move == "scissors" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "scissors" and p2_move == "lizard" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "rock" and p2_move == "lizard" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "paper" and p2_move == "spock" : gameText = f"{gameText} Player 1 Winss..."
+                elif p1_move == "lizard" and p2_move == "paper" : gameText = f"{gameText} Player 1 Winss..."
+                else: gameText = f"{gameText} Player 2 Winss..."
+
+            else:
+                gameText = "Error Code: 69 / Always wear Helmate. <3"
+
         cv.imshow('frame',frame)
 
         if cv.waitKey(1) & 0xFF == ord('q'): break
