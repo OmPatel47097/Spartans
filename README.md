@@ -30,8 +30,6 @@ LIBRARIES USED IN THE CODE
 3.	Tensorflow
 4.	Numpy
 5.	Squeezenet
-6.	Flask
-Also we used website development language like html and CSS to design the website and connected it to the python source code using Flask
 
 
 
