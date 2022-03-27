@@ -2,7 +2,7 @@ body{
     background-image: url(bg.jpg);
     /*background-repeat: no-repeat;
     background-size: cover*/;
-    color: white;
+    
 }
 
 .btn_play{
@@ -10,22 +10,12 @@ body{
     padding-top: 100px;
 }
 
-.Sheldon{
-    text-align: center;
-    padding-top: 100px;
+.btn{
+    background-color: yellow;
+    
 }
 
-button{
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.SWars{
     text-align: center;
-    border: 2px solid rgb(255,232,28);
-    background: rgb(255,232,28);
-    color: rgba(0, 0, 200, 0.6);
-    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.6);
-    border-radius: 10px;
-    padding: 3px 10px;
-    display: inline-block;
-    cursor: pointer;
+    padding-top: 50px;
 }

@@ -10,7 +10,7 @@ import time
 sample_imj = 200
 
 IMG_s_PATH = 'D:\ML'
-IMG_cls_PATH = 'D:\ML\TheOne'
+IMG_cls_PATH = 'D:\ML'
 
 capt = cv2.VideoCapture(0)
 
