@@ -11,7 +11,8 @@ body{
 }
 
 .btn{
-    background-color: yellow;
+    background-color: black;
+    border-color: black;
     
 }
 
@@ -19,3 +20,4 @@ body{
     text-align: center;
     padding-top: 50px;
 }
+
