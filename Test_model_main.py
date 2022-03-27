@@ -3,7 +3,8 @@ import cv2
 import numpy as np
 import sys
 
-file_path = "S:/Compitation & Hackthons/Sparten_Try/inpt_image/find.jpg"
+a = input("Enter Path:")
+filepath = a
 
 REV_CLASS_MAP = {
     0: "Rock",
@@ -23,7 +24,7 @@ def mapper(val):
 model = load_model("rock-paper-scissors-model.h5")
 
 # load the image
-img = cv2.imread("S:\Compitation & Hackthons\Sparten_Try\inpt_image\d3.jpeg")
+img = cv2.imread(filepath)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img = cv2.resize(img, (227, 227))
 

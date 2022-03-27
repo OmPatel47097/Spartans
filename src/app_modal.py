@@ -122,15 +122,10 @@ while True:
     if computer_move_name != "none":
         icon = cv2.imread(
             "Hands/{}.png".format(computer_move_name))
-<<<<<<< HEAD
-        icon = cv2.resize(icon, (400,400))
-        #frame[800:1200, 100:500] = icon
-=======
         icon = cv2.resize(icon, (400, 400))
         frame[100:500, 800:1200] = icon
->>>>>>> 7c0b9d7a06f96144fca376ce4fb76908c4ef541f
 
-    cv2.imshow("Rock Paper Scissors", icon)
+    cv2.imshow("Rock Paper Scissors", frame)
 
     k = cv2.waitKey(10)
     if k == ord('q'):
